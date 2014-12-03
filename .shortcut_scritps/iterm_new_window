@@ -1,3 +1,5 @@
+#!/usr/bin/osascript
+
 ## run as service from the Automator container "Run AppleScript"
 ## set keyboard shortcut to something you want (e.g. Ctrl + Alt + CMD + .)
 
