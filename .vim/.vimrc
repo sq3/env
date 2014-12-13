@@ -30,6 +30,8 @@ set laststatus=2
 "                \\ \ %#Error#%{&paste?'\ PASTE\ ':''}%*
 "                \%=\ [C:%4b,%4B]\ [X:%3v/%3{&tw}]\ [Y:%5l/%5L]
 "
+set wildmenu
+"
 " Powerline
 " =========
 let g:Powerline_symbols = 'compatible'
