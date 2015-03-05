@@ -86,6 +86,7 @@ alias pastebin='/usr/local/bin/pastebinit'
 alias yplayer='/usr/local/bin/mpsyt'
 alias enterenv='. env/bin/activate'
 alias v='/usr/bin/vim -p'
+alias hs='history | grep'
 
 
 export PATH=/usr/local/bin:$PATH
