@@ -65,3 +65,4 @@ vmap <leader>ä :w !pbcopy<CR>
 
 " Settings, die vom Dateityp abhängen
 autocmd FileType python setlocal et sta ts=4 sw=4
+autocmd BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md  set ft=markdown
