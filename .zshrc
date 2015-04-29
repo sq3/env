@@ -87,6 +87,7 @@ alias yplayer='/usr/local/bin/mpsyt'
 alias enterenv='. env/bin/activate'
 alias v='/usr/bin/vim -p'
 alias hs='history | grep'
+alias notes='~/Documents/notes/'
 
 
 export PATH=/usr/local/bin:$PATH
