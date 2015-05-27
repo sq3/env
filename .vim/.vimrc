@@ -57,6 +57,10 @@ set showtabline=2
 nmap ö gT
 nmap ä gt
 
+" Move tabs
+nmap Ä :+tabm<CR>
+nmap Ö :-tabm<CR>
+
 let mapleader = ","
 
 " Use Mac OS X Clipboard for Copy/Paste
@@ -66,3 +70,6 @@ vmap <leader>ä :w !pbcopy<CR>
 " Settings, die vom Dateityp abhängen
 autocmd FileType python setlocal et sta ts=4 sw=4
 autocmd BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md  set ft=markdown
+
+setl tw=73
+set colorcolumn=73
