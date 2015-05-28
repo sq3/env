@@ -71,5 +71,35 @@ vmap <leader>ä :w !pbcopy<CR>
 autocmd FileType python setlocal et sta ts=4 sw=4
 autocmd BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md  set ft=markdown
 
-setl tw=73
-set colorcolumn=73
+" Color Column!
+fun! AddAllColorColumns(begin, max)
+	" Alle von begin bis einschließlich max erzeugen.
+	let l:str = ''
+	let l:at = a:begin
+	while (l:at < a:max)
+		let l:str = l:str . l:at . ","
+		let l:at = l:at + 1
+	endwhile
+	let l:str = l:str . a:max
+
+	" War schon was gesetzt? Dann hänge unser neues an.
+	if (strlen(&colorcolumn) > 0)
+		let l:str = &colorcolumn . "," . l:str
+	endif
+
+	exec 'set colorcolumn=' . l:str
+endfun
+
+" Toggle tw=0 / tw=72
+fun! ToggleTextwidth(...)
+	if (a:0 || &tw == 0)
+		setl tw=72
+		set colorcolumn=73
+		call AddAllColorColumns(81, 300)
+	else
+		setl tw=0
+		set colorcolumn=
+	endif
+endfun
+nmap <Leader>W :call ToggleTextwidth()<CR>
+call ToggleTextwidth(1)
