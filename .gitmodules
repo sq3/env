@@ -1,0 +1,6 @@
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = /Users/iMarc/Documents/repository/privat/dotfiles-pub/.oh-my-zsh
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
