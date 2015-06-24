@@ -86,6 +86,7 @@ alias pastebin='/usr/local/bin/pastebinit'
 alias yplayer='/usr/local/bin/mpsyt'
 alias enterenv='. env/bin/activate'
 alias v='/usr/bin/vim -p'
+alias s='/usr/local/bin/subl'
 alias hs='history | grep'
 alias notes='~/Documents/notes/'
 
