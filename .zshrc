@@ -89,7 +89,7 @@ alias v='/usr/bin/vim -p'
 alias s='/usr/local/bin/subl'
 alias hs='history | grep'
 alias notes='~/Documents/notes/'
-alias pw='pwgen 12 5'
+alias pw='pwgen 12 1 | tr -d '\n' | pbcopy'
 
 
 export PATH=/usr/local/bin:$PATH
