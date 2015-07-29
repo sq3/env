@@ -65,7 +65,7 @@ let mapleader = ","
 
 " Use Mac OS X Clipboard for Copy/Paste
 nmap <leader>ö :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
-vmap <leader>ä :w !pbcopy<CR>
+vmap <leader>ä :w !tr -d '\n' \| pbcopy<CR>
 
 " Settings, die vom Dateityp abhängen
 autocmd FileType python setlocal et sta ts=4 sw=4
