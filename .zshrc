@@ -90,6 +90,7 @@ alias s='/usr/local/bin/subl'
 alias hs='history | grep'
 alias notes='~/Documents/notes/'
 alias pw='pwgen 12 1 | tr -d '\n' | pbcopy'
+alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 
 
 export PATH=/usr/local/bin:$PATH
