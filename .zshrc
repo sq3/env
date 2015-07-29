@@ -97,6 +97,8 @@ export PATH=/usr/local/bin:$PATH
 export PATH=/Users/iMarc/Documents/repository/privat/bin:$PATH
 export PATH=/Users/iMarc/Documents/repository/privat/bin-pub:$PATH
 export PATH=/usr/local/sbin:$PATH
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 export LC_ALL=en_US.UTF-8  
 export LANG=en_US.UTF-8
