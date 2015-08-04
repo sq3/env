@@ -102,3 +102,5 @@ export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 export LC_ALL=en_US.UTF-8  
 export LANG=en_US.UTF-8
+
+eval `dircolors ~/.oh-my-zsh/dircolors-solarized/dircolors.256dark`
