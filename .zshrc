@@ -91,6 +91,7 @@ alias hs='history | grep'
 alias notes='~/Documents/notes/'
 alias pw='pwgen 12 1 | tr -d '\n' | pbcopy'
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
+alias w='wunderline'
 
 
 export PATH=/usr/local/bin:$PATH
