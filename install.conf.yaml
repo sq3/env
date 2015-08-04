@@ -1,9 +1,9 @@
 - clean: [‘~‘]
 - link:
     ~/.brew_list: .brew_list
-    ~/.dircolors-solarized: .dircolors-solarized
+    ~/.dircolors-solarized: dircolors-solarized
     ~/.gitignore_global: .gitignore_global
-    ~/.oh-my-zsh: .oh-my-zsh/
+    ~/.oh-my-zsh: oh-my-zsh/
     ~/.oh-my-zsh/themes/sq3.zsh-theme: sq3.zsh-theme
     ~/.vim: .vim/
     ~/.vimrc: .vim/.vimrc
