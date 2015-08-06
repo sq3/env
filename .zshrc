@@ -9,7 +9,6 @@ source $ZSH/oh-my-zsh.sh
 
 alias t='/tmp/tmp'
 alias repos='/Users/iMarc/Documents/repository'
-
 alias speedtest='/usr/local/bin/speedtest_cli'
 alias pastebin='/usr/local/bin/pastebinit'
 alias yplayer='/usr/local/bin/mpsyt'
@@ -22,7 +21,7 @@ alias pw='pwgen 12 1 | tr -d '\n' | pbcopy'
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 alias w='wunderline'
 alias l='ls -lahtr --color=auto'
-
+alias glog='git log --graph --decorate --oneline --color=always --all'
 
 export PATH=/usr/local/bin:$PATH
 export PATH=/Users/iMarc/Documents/repository/privat/bin:$PATH
