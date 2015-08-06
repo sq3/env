@@ -21,7 +21,7 @@ alias pw='pwgen 12 1 | tr -d '\n' | pbcopy'
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 alias w='wunderline'
 alias l='ls -lahtr --color=auto'
-alias glog='git log --graph --decorate --oneline --color=always --all'
+alias glog='git log --graph --color=always --all --pretty=format:"%C(auto)%h%d %s (%Cred%an, %ai)"'
 
 export PATH=/usr/local/bin:$PATH
 export PATH=/Users/iMarc/Documents/repository/privat/bin:$PATH
