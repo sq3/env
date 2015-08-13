@@ -10,6 +10,8 @@ set background=dark
 set number
 highlight LineNr ctermfg=black ctermbg=grey
 
+let g:airline_powerline_fonts = 1
+
 colorscheme solarized
 
 
@@ -33,18 +35,21 @@ set laststatus=2
 set wildmenu
 "
 " Powerline
-" =========
-let g:Powerline_symbols = 'compatible'
-let g:Powerline_colorscheme = 'default'
-let g:Powerline_theme = 'default'
-let g:Powerline_stl_path_style = 'full'
-let g:Powerline_cache_enabled = 0
+"" =========
+"let g:Powerline_symbols = 'compatible'
+"let g:Powerline_colorscheme = 'default'
+"let g:Powerline_theme = 'default'
+"let g:Powerline_stl_path_style = 'full'
+"let g:Powerline_cache_enabled = 0
 
 " Tabs and Spaces
 " ===============
 set list
-set listchars=tab:\|. 
+set listchars=tab:\|.
 hi SpecialKey term=bold cterm=none ctermfg=0 ctermbg=none guifg=Cyan
+set expandtab
+set tabstop=4
+retab
 
 map <ESC>[1;2P <F13>
 nmap <F13> :set list!<CR>
@@ -52,7 +57,7 @@ nmap <F13> :set list!<CR>
 " Mappings
 " ========
 
-" Tabs 
+" Tabs
 set showtabline=2
 nmap ö gT
 nmap ä gt
@@ -73,33 +78,34 @@ autocmd BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md  set ft=m
 
 " Color Column!
 fun! AddAllColorColumns(begin, max)
-	" Alle von begin bis einschließlich max erzeugen.
-	let l:str = ''
-	let l:at = a:begin
-	while (l:at < a:max)
-		let l:str = l:str . l:at . ","
-		let l:at = l:at + 1
-	endwhile
-	let l:str = l:str . a:max
+    " Alle von begin bis einschließlich max erzeugen.
+    let l:str = ''
+    let l:at = a:begin
+    while (l:at < a:max)
+        let l:str = l:str . l:at . ","
+        let l:at = l:at + 1
+    endwhile
+    let l:str = l:str . a:max
 
-	" War schon was gesetzt? Dann hänge unser neues an.
-	if (strlen(&colorcolumn) > 0)
-		let l:str = &colorcolumn . "," . l:str
-	endif
+    " War schon was gesetzt? Dann hänge unser neues an.
+    if (strlen(&colorcolumn) > 0)
+        let l:str = &colorcolumn . "," . l:str
+    endif
 
-	exec 'set colorcolumn=' . l:str
+    exec 'set colorcolumn=' . l:str
 endfun
 
 " Toggle tw=0 / tw=72
 fun! ToggleTextwidth(...)
-	if (a:0 || &tw == 0)
-		setl tw=72
-		set colorcolumn=73
-		call AddAllColorColumns(81, 300)
-	else
-		setl tw=0
-		set colorcolumn=
-	endif
+    if (a:0 || &tw == 0)
+        setl tw=72
+        set colorcolumn=73
+        call AddAllColorColumns(81, 300)
+    else
+        setl tw=0
+        set colorcolumn=
+    endif
 endfun
 nmap <Leader>W :call ToggleTextwidth()<CR>
 call ToggleTextwidth(1)
+
