@@ -24,6 +24,7 @@ alias l='ls -lahtr --color=auto'
 alias docs='cd /Volumes/Boxcryptor/Google\ Drive/Private/Docs'
 alias glog='git log --graph --color=always --all --pretty=format:"%C(auto)%h%d %s (%Cred%an, %ai)"'
 alias wb='workbench'
+alias f='find . -iname'
 
 export PATH=/usr/local/bin:$PATH
 export PATH=/Users/iMarc/Documents/repository/privat/bin:$PATH
