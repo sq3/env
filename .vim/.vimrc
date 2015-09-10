@@ -109,3 +109,5 @@ endfun
 nmap <Leader>W :call ToggleTextwidth()<CR>
 call ToggleTextwidth(1)
 
+" open NerdTree with start
+au VimEnter *  NERDTree
