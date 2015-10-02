@@ -17,7 +17,7 @@ alias v='/usr/bin/vim -p'
 alias s='/usr/local/bin/subl'
 alias hs='history | grep'
 alias notes='~/Documents/notes/'
-alias pw='pwgen 12 1 | tr -d '\n' | pbcopy'
+alias pw='pwgen 15 1 -s -y | tr -d '\n' | pbcopy'
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 alias w='wunderline'
 alias l='ls -lahtr --color=auto'
@@ -25,6 +25,7 @@ alias docs='cd /Volumes/Boxcryptor/Google\ Drive/Private/Docs'
 alias glog='git log --graph --color=always --all --pretty=format:"%C(auto)%h%d %s (%Cred%an, %ai)"'
 alias wb='workbench'
 alias f='find . -iname'
+alias mails="/tmp/tmp/mail/"
 
 export PATH=/usr/local/bin:$PATH
 export PATH=/Users/iMarc/Documents/repository/privat/bin:$PATH
