@@ -44,15 +44,22 @@ set wildmenu
 
 " Tabs and Spaces
 " ===============
-set list
-set listchars=tab:\|.
-hi SpecialKey term=bold cterm=none ctermfg=0 ctermbg=none guifg=Cyan
-set expandtab
-set tabstop=4
-retab
+"set list
+"set listchars=tab:\|.
+""hi SpecialKey term=bold cterm=none ctermfg=0 ctermbg=none guifg=Cyan
+"set expandtab
+"set tabstop=4
+"retab
+"
+"map <ESC>[1;2P <F13>
+"nmap <F13> :set list!<CR>
 
-map <ESC>[1;2P <F13>
-nmap <F13> :set list!<CR>
+set list
+set lcs=extends:»
+set lcs+=nbsp:·
+set lcs+=precedes:«
+set lcs+=trail:·
+set lcs+=tab:\|·
 
 " Mappings
 " ========
@@ -111,3 +118,5 @@ call ToggleTextwidth(1)
 
 " open NerdTree with start
 au VimEnter *  NERDTree
+
+let g:nerdtree_tabs_open_on_console_startup=1
