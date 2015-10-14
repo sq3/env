@@ -5,6 +5,7 @@
     ~/.gitignore_global: .gitignore_global
     ~/.oh-my-zsh: oh-my-zsh/
     ~/.oh-my-zsh/themes/sq3.zsh-theme: sq3.zsh-theme
+    ~/Library/Preferences/com.divisiblebyzero.Spectacle.plist: prefs/com.divisiblebyzero.Spectacle.plist
     ~/.vim: .vim/
     ~/.vimrc: .vim/.vimrc
     ~/.zshrc: .zshrc
