@@ -33,6 +33,7 @@ export PATH=/Users/iMarc/Documents/repository/privat/bin-pub:$PATH
 export PATH=/usr/local/sbin:$PATH
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+export MANWIDTH=75
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
