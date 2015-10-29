@@ -26,6 +26,7 @@ alias glog='git log --graph --color=always --all --pretty=format:"%C(auto)%h%d %
 alias wb='workbench'
 alias f='find . -iname'
 alias mails="/tmp/tmp/mail/"
+alias mplayer="mpv"
 
 export PATH=/usr/local/bin:$PATH
 export PATH=/Users/iMarc/Documents/repository/privat/bin:$PATH
