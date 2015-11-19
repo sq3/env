@@ -25,7 +25,6 @@ alias docs='cd /Volumes/Boxcryptor/Google\ Drive/Private/Docs'
 alias glog='git log --graph --color=always --all --pretty=format:"%C(auto)%h%d %s (%Cred%an, %ai)"'
 alias wb='workbench'
 alias f='find . -iname'
-alias mails="/tmp/tmp/mail/"
 alias mplayer="mpv"
 
 export PATH=/usr/local/bin:$PATH
@@ -40,3 +39,8 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 eval `dircolors ~/.dircolors-solarized/dircolors.256dark`
+
+export LESS_TERMCAP_md=$'\e[1;33m'        # Bold
+export LESS_TERMCAP_me=$'\e[0m'           # End Bold
+export LESS_TERMCAP_us=$'\e[1;36m'        # Underline
+export LESS_TERMCAP_ue=$'\e[0m'           # End Underline
