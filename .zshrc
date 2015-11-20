@@ -40,7 +40,7 @@ export LANG=en_US.UTF-8
 
 eval `dircolors ~/.dircolors-solarized/dircolors.256dark`
 
-export LESS_TERMCAP_md=$'\e[1;33m'        # Bold
+export LESS_TERMCAP_md=$'\e[2;33m'        # Bold
 export LESS_TERMCAP_me=$'\e[0m'           # End Bold
-export LESS_TERMCAP_us=$'\e[1;36m'        # Underline
+export LESS_TERMCAP_us=$'\e[3;36m'        # Underline
 export LESS_TERMCAP_ue=$'\e[0m'           # End Underline
