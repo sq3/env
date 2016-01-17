@@ -21,6 +21,7 @@ alias pw='pwgen 15 1 -s -y | tr -d '\n' | pbcopy'
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 alias w='wunderline'
 alias l='ls -lahtr --color=auto'
+alias ls='ls --color=auto'
 alias docs='cd /Volumes/Boxcryptor/Google\ Drive/Private/Docs'
 alias glog='git log --graph --color=always --all --pretty=format:"%C(auto)%h%d %s (%Cred%an, %ai)"'
 alias wb='workbench'
@@ -37,6 +38,9 @@ export MANWIDTH=75
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+export EDITOR='vim'
+export SHELL='zsh'
 
 eval `dircolors ~/.dircolors-solarized/dircolors.256dark`
 
