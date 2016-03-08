@@ -120,3 +120,5 @@ call ToggleTextwidth(1)
 au VimEnter *  NERDTree
 
 let g:nerdtree_tabs_open_on_console_startup=1
+
+set cursorline
