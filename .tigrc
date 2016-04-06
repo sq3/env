@@ -22,7 +22,7 @@ set line-graphics             = default
 set log-options               = 
 set log-view                  = line-number:no,interval=5 text
 set main-options              = 
-set main-view                 = line-number:no,interval=5 id:yes,color=no date:short author:abbreviated commit-title:yes,graph=v2,refs=yes
+set main-view                 = line-number:no,interval=5 id:yes,color=no date:default author:abbreviated commit-title:yes,graph=v2,refs=yes
 set mouse                     = no
 set mouse-scroll              = 3
 set pager-view                = line-number:no,interval=5 text
