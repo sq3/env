@@ -3,7 +3,6 @@ export ZSH=$HOME/.oh-my-zsh
 
 # colors
 ZSH_THEME="sq3"
-eval `dircolors ~/.dircolors-solarized/dircolors.256dark`
 
 # history
 HIST_STAMPS="mm/dd/yyyy"
@@ -65,3 +64,6 @@ export LESS_TERMCAP_ue=$'\e[0m'           # End Underline
 export DOCKER_HOST=tcp://192.168.59.103:2376
 export DOCKER_CERT_PATH=/Users/iMarc/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
+
+# dircolors
+eval `dircolors ~/.dircolors-solarized/dircolors.256dark`
