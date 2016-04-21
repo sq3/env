@@ -25,3 +25,21 @@
 [submodule "mutt-colors-solarized"]
 	path = mutt-colors-solarized
 	url = https://github.com/altercation/mutt-colors-solarized.git
+[submodule ".vim/bundle/vim-bundle-mako"]
+	path = .vim/bundle/vim-bundle-mako
+	url = https://github.com/sophacles/vim-bundle-mako.git
+[submodule "tmux/plugins/tmux-logging"]
+	path = tmux/plugins/tmux-logging
+	url = https://github.com/tmux-plugins/tmux-logging.git
+[submodule "tmux/plugins/tmux-sensible"]
+	path = tmux/plugins/tmux-sensible
+	url = https://github.com/tmux-plugins/tmux-sensible.git
+[submodule "tmux/plugins/tmux-urlview"]
+	path = tmux/plugins/tmux-urlview
+	url = https://github.com/tmux-plugins/tmux-urlview.git
+[submodule "tmux/plugins/tpm"]
+	path = tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm.git
+[submodule ".vim/bundle/vim-markdown-folding"]
+	path = .vim/bundle/vim-markdown-folding
+	url = https://github.com/nelstrom/vim-markdown-folding.git
