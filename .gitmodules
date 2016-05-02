@@ -43,3 +43,6 @@
 [submodule ".vim/bundle/vim-markdown-folding"]
 	path = .vim/bundle/vim-markdown-folding
 	url = https://github.com/nelstrom/vim-markdown-folding.git
+[submodule ".vim/bundle/vim-autopep8"]
+	path = .vim/bundle/vim-autopep8
+	url = git@github.com:tell-k/vim-autopep8.git
