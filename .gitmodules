@@ -46,3 +46,6 @@
 [submodule ".vim/bundle/vim-autopep8"]
 	path = .vim/bundle/vim-autopep8
 	url = git@github.com:tell-k/vim-autopep8.git
+[submodule ".vim/bundle/tagbar"]
+	path = .vim/bundle/tagbar
+	url = https://github.com/majutsushi/tagbar
