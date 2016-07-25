@@ -19,15 +19,25 @@ alias enterenv='. env/bin/activate'
 alias v='/usr/bin/vim -p'
 alias s='/usr/local/bin/subl'
 alias hs='history | grep'
+
+alias g='git'
+alias ga='git add'
+alias gc='git commit'
+alias gcm='git commit -m'
+alias gp='git pull'
+alias gf='git fetch'
+alias glog='git log --graph --color=always --all --pretty=format:"%C(auto)%h%d %s (%Cred%an, %ai)"'
+alias gs='git status'
+
 alias notes='~/Documents/notes/'
 alias pw='pwgen 15 1 -s -y | tr -d '\n' | pbcopy'
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 alias w='wunderline'
 alias l='ls -lahtr --color=auto'
 alias ls='ls --color=auto'
-alias glog='git log --graph --color=always --all --pretty=format:"%C(auto)%h%d %s (%Cred%an, %ai)"'
 alias f='find . -iname'
 alias play='mpv -fs --autosync=4 --cache=yes --cache-secs=60'
+alias vm='cd ~/Documents/repository/privat/vagrantfiles/'
 
 # environment
 export LC_ALL=en_US.UTF-8
@@ -67,3 +77,9 @@ export DOCKER_TLS_VERIFY=1
 
 # dircolors
 eval `dircolors ~/.dircolors-solarized/dircolors.256dark`
+
+#lunchy completion
+LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
+if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
+  . $LUNCHY_DIR/lunchy-completion.zsh
+fi
