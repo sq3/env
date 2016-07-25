@@ -2,7 +2,6 @@ call pathogen#infect()
 syntax enable
 filetype plugin indent on
 
-
 " Look and feel
 " ============
 set encoding=utf-8
@@ -50,7 +49,7 @@ set wildmenu
 "set expandtab
 "set tabstop=4
 "retab
-"
+""
 "map <ESC>[1;2P <F13>
 "nmap <F13> :set list!<CR>
 
@@ -122,3 +121,20 @@ au VimEnter *  NERDTree
 let g:nerdtree_tabs_open_on_console_startup=1
 
 set cursorline
+
+set nocompatible
+if has("autocmd")
+    filetype plugin indent on
+endif
+
+set mouse=a
+nmap <Leader><Tab> :set tabstop=4 shiftwidth=4 expandtab<CR>
+vnoremap <Leader>c :!sed 's/^/-/' \| column -t \| sed 's/^-//'<CR>
+vnoremap <Leader>C :!sed 's/^/-/' \| column -t \| sed 's/^-//'<CR>gv=
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_enable_python_checker = 1
+
+let g:AutoPairsFlyMode = 0
+let g:AutoPairsShortcutBackInsert = '<M-b>'
+nmap <F9> :TagbarToggle<CR>
