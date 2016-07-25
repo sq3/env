@@ -29,6 +29,7 @@ alias gf='git fetch'
 alias glog='git log --graph --color=always --all --pretty=format:"%C(auto)%h%d %s (%Cred%an, %ai)"'
 alias gs='git status'
 
+alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
 alias notes='~/Documents/notes/'
 alias pw='pwgen 15 1 -s -y | tr -d '\n' | pbcopy'
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
