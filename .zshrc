@@ -6,7 +6,7 @@ ZSH_THEME="sq3"
 
 # history
 HIST_STAMPS="mm/dd/yyyy"
-plugins=(git)
+plugins=(git osx vagrant web-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -39,6 +39,7 @@ alias ls='ls --color=auto'
 alias f='find . -iname'
 alias play='mpv -fs --autosync=4 --cache=yes --cache-secs=60'
 alias vm='cd ~/Documents/repository/privat/vagrantfiles/'
+alias vb='VBoxManage'
 
 # environment
 export LC_ALL=en_US.UTF-8
