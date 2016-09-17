@@ -1,0 +1,83 @@
+# Shell Aliases and Functions.
+alias l='ls -lahtr --color=auto'
+alias ls='ls --color=auto'
+
+alias t='cd /tmp/tmp'
+alias repos='cd ~/repositories'
+alias speedtest='/usr/local/bin/speedtest_cli'
+alias pastebin='/usr/local/bin/pastebinit'
+alias enterenv='. env/bin/activate'
+alias v='/usr/bin/vim -p'
+alias s='/usr/local/bin/subl'
+alias hs='history | grep'
+
+alias g='git'
+alias ga='git add'
+alias gc='git commit'
+alias gcm='git commit -m'
+alias gp='git pull'
+alias gf='git fetch'
+alias glog='git log --graph --color=always --all --pretty=format:"%C(auto)%h%d %s (%Cred%an, %ai)"'
+alias gs='git status'
+
+alias notes='~/Documents/notes/'
+alias pw='pwgen 15 1 -s -y | tr -d '\n' | pbcopy'
+alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
+alias w='wunderline'
+alias f='find . -iname'
+alias play='mpv -fs --autosync=4 --cache=yes --cache-secs=60'
+alias vm='cd ~/Documents/repository/privat/vagrantfiles/'
+alias vb='VBoxManage'
+
+# Environment (Shell).
+export PS1='\e[1;37m\]\w\[\e[m\]\n\[\e[1;33m\]\[\e[0;33m\]\[\e[1;31m\]\$\[\e[m\] '
+
+export HISTSIZE=50000
+export SAVEHIST=50000
+export HISTCONTROL=ignoredups
+shopt -s globstar
+shopt -s checkjobs
+shopt -s checkwinsize
+shopt -s histreedit
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+export EDITOR='vim'
+export SHELL='bash'
+
+# Environment (other programs).
+export LESS="-iRS -# 2"
+export EDITOR=vim
+export VISUAL=vim
+
+export PATH=/usr/local/bin:$PATH
+export PATH=/Users/squeeze/repositories/bin:$PATH
+export PATH=/Users/squeeze/repositories/bin-pub:$PATH
+export PATH=/usr/local/sbin:$PATH
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+
+# man page
+export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+export MANWIDTH=75
+
+export LESS_TERMCAP_md=$'\e[2;33m'        # Bold
+export LESS_TERMCAP_me=$'\e[0m'           # End Bold
+export LESS_TERMCAP_us=$'\e[3;36m'        # Underline
+export LESS_TERMCAP_ue=$'\e[0m'           # End Underline
+
+eval `dircolors ~/.dircolors-solarized/dircolors.256dark`
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
+
+if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
+    source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
+fi
+
+GIT_PROMPT_THEME=Solarized
+GIT_PROMPT_SHOW_UPSTREAM=0
+GIT_PROMPT_FETCH_REMOTE_STATUS=0
+GIT_PROMPT_ONLY_IN_REPO=1
+
