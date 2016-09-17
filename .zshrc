@@ -41,6 +41,8 @@ alias play='mpv -fs --autosync=4 --cache=yes --cache-secs=60'
 alias vm='cd ~/Documents/repository/privat/vagrantfiles/'
 alias vb='VBoxManage'
 
+alias pb='profitbricks'
+
 # environment
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -67,10 +69,25 @@ export BWNODEWORKERS=8
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export MANWIDTH=75
 
-export LESS_TERMCAP_md=$'\e[2;33m'        # Bold
-export LESS_TERMCAP_me=$'\e[0m'           # End Bold
-export LESS_TERMCAP_us=$'\e[3;36m'        # Underline
-export LESS_TERMCAP_ue=$'\e[0m'           # End Underline
+
+man() {
+    env \
+        LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+        LESS_TERMCAP_md=$(printf "\e[1;31m") \
+        LESS_TERMCAP_me=$(printf "\e[0m") \
+        LESS_TERMCAP_se=$(printf "\e[0m") \
+        LESS_TERMCAP_so=$(printf "\e[0;37;102m") \
+        LESS_TERMCAP_ue=$(printf "\e[0m") \
+        LESS_TERMCAP_us=$(printf "\e[4;32m") \
+        PAGER=/usr/bin/less \
+        _NROFF_U=1 \
+        PATH=${HOME}/bin:${PATH} \
+    man "$@"
+}
+#export LESS_TERMCAP_md=$'\e[2;33m'        # Bold
+#export LESS_TERMCAP_me=$'\e[0m'           # End Bold
+#export LESS_TERMCAP_us=$'\e[3;36m'        # Underline
+#export LESS_TERMCAP_ue=$'\e[0m'           # End Underline
 
 # docker
 export DOCKER_HOST=tcp://192.168.59.103:2376
