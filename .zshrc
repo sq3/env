@@ -34,7 +34,7 @@ alias notes='~/Documents/notes/'
 alias pw='pwgen 15 1 -s -y | tr -d '\n' | pbcopy'
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 alias w='wunderline'
-alias l='ls -lahtr --color=auto'
+alias l='ls -lahtr --color=auto --time-style="+ %F   %H:%M | "'
 alias ls='ls --color=auto'
 alias f='find . -iname'
 alias play='mpv -fs --autosync=4 --cache=yes --cache-secs=60'
@@ -95,7 +95,7 @@ export DOCKER_CERT_PATH=/Users/iMarc/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
 
 # dircolors
-eval `dircolors ~/.dircolors-solarized/dircolors.256dark`
+eval $(dircolors ~/.dircolors-solarized/dircolors.256dark)
 
 #lunchy completion
 LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
