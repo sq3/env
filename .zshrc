@@ -11,6 +11,8 @@ plugins=(git osx vagrant web-search)
 source $ZSH/oh-my-zsh.sh
 
 # alias
+source ~/.zsh/secret_alias
+
 alias t='/tmp/tmp'
 alias repos='/Users/iMarc/Documents/repository'
 alias speedtest='/usr/local/bin/speedtest_cli'
@@ -34,7 +36,7 @@ alias notes='~/Documents/notes/'
 alias pw='pwgen 15 1 -s -y | tr -d '\n' | pbcopy'
 alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 alias w='wunderline'
-alias l='ls -lahtr --color=auto --time-style="+ %F   %H:%M | "'
+alias l='ls -lahtr --color=auto --time-style="+ %F   %H:%M │ "'
 alias ls='ls --color=auto'
 alias f='find . -iname'
 alias play='mpv -fs --autosync=4 --cache=yes --cache-secs=60'
