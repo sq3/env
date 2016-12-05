@@ -38,6 +38,7 @@ alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 alias w='wunderline'
 alias l='ls -lahtr --color=auto --time-style="+ %F   %H:%M │ "'
 alias ls='ls --color=auto'
+alias lsr='ls_recent'
 alias f='find . -iname'
 alias play='mpv -fs --autosync=4 --cache=yes --cache-secs=60'
 alias vm='cd ~/Documents/repository/privat/vagrantfiles/'
@@ -99,8 +100,3 @@ export DOCKER_TLS_VERIFY=1
 # dircolors
 eval $(dircolors ~/.dircolors-solarized/dircolors.256dark)
 
-#lunchy completion
-LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
-if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
-  . $LUNCHY_DIR/lunchy-completion.zsh
-fi
