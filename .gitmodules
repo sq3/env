@@ -55,3 +55,6 @@
 [submodule "fonts"]
 	path = fonts
 	url = git@github.com:powerline/fonts.git
+[submodule "jira-cli"]
+	path = jira-cli
+	url = https://github.com/MarianoGappa/jira-cli.git
