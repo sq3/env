@@ -1,12 +1,13 @@
 - clean: [‘~‘]
 - link:
-    ~/.brew_list: .brew_list
     ~/.bashrc: .bashrc
     ~/.dircolors-solarized: dircolors-solarized
     ~/.gitignore_global: .gitignore_global
+    ~/.khdrc: .khdrc
+    ~/.kwm: .kwm
+    ~/.kwm/kwmrc: .kwm/kwmrc
     ~/.oh-my-zsh: oh-my-zsh/
     ~/.oh-my-zsh/themes/sq3.zsh-theme: sq3.zsh-theme
-    ~/Library/Preferences/com.divisiblebyzero.Spectacle.plist: prefs/com.divisiblebyzero.Spectacle.plist
     ~/.mutt-colors-solarized: mutt-colors-solarized
     ~/.tigrc: .tigrc
     ~/.tmux: tmux
@@ -17,3 +18,5 @@
     ~/.zshrc: .zshrc
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - [brew services restart khd, Restart khd]
+    - [brew services restart kwm, Restart kwm]
