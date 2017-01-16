@@ -1,8 +1,10 @@
 - clean: [‘~‘]
 - link:
     ~/.bashrc: .bashrc
+    ~/.config/bitbar: bitbar/
     ~/.dircolors-solarized: dircolors-solarized
     ~/.gitignore_global: .gitignore_global
+    ~/.config/htop: htop
     ~/.khdrc: .khdrc
     ~/.kwm: .kwm
     ~/.kwm/kwmrc: .kwm/kwmrc
@@ -12,6 +14,7 @@
     ~/.tigrc: .tigrc
     ~/.tmux: tmux
     ~/.tmux.conf: tmux/.tmux.conf
+    ~/Library/Preferences/com.apple.Terminal.plist: system-preferences/com.apple.Terminal.plist
     ~/.vim: .vim/
     ~/.vimrc: .vim/.vimrc
     ~/.vim/bundle/vim-colors-solarized: vim-colors-solarized
@@ -20,3 +23,4 @@
     - [git submodule update --init --recursive, Installing submodules]
     - [brew services restart khd, Restart khd]
     - [brew services restart kwm, Restart kwm]
+    - ["cp -av ./system-preferences/com.apple.Terminal.plist ~/Library/Preferences/com.apple.Terminal.plist", Update terminal config]
