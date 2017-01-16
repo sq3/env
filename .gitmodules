@@ -55,9 +55,6 @@
 [submodule "fonts"]
 	path = fonts
 	url = git@github.com:powerline/fonts.git
-[submodule "jira-cli"]
-	path = jira-cli
-	url = https://github.com/MarianoGappa/jira-cli.git
 [submodule "vim-autopep8"]
 	path = vim-autopep8
 	url = git@github.com:tell-k/vim-autopep8.git

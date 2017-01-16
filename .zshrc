@@ -12,7 +12,6 @@ source $ZSH/oh-my-zsh.sh
 
 # alias
 source ~/.zsh/secret_alias
-source ~/Documents/repository/privat/dotfiles-pub/jira-cli/jira.sh
 
 alias t='/tmp/tmp'
 alias repos='/Users/iMarc/Documents/repository'
