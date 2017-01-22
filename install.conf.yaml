@@ -2,11 +2,12 @@
 - link:
     ~/.bashrc: etc/bash/bashrc
     ~/.config/bitbar: etc/bitbar/
-    ~/.config/bash/dircolors-solarized: etc/bash/dircolors-solarized
-    ~/.config/git/gitignore_global: etc/git/gitignore_global
+    ~/.config/bash: etc/bash
+    ~/.config/git: etc/git
     ~/.config/htop: etc/htop
     ~/.config/zsh: etc/zsh
     ~/.config/zsh/oh-my-zsh/themes/sq3.zsh-theme: etc/zsh/sq3.zsh-theme
+    ~/.gitconfig: etc/git/gitconfig
     ~/.khdrc: etc/khd/khdrc
     ~/.kwm: etc/kwm
     ~/.tigrc: etc/tig/tigrc
