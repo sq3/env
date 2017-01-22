@@ -28,3 +28,6 @@
 [submodule "etc/vim/bundle/auto-pairs"]
 	path = etc/vim/bundle/auto-pairs
 	url = git@github.com:jiangmiao/auto-pairs.git
+[submodule "etc/tmux/plugins/tpm"]
+	path = etc/tmux/plugins/tpm
+	url = git@github.com:tmux-plugins/tpm.git
