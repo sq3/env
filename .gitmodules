@@ -76,3 +76,6 @@
 [submodule "vim/bundle/syntastic"]
 	path = vim/bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
+[submodule "etc/bash/dircolors-solarized"]
+	path = etc/bash/dircolors-solarized
+	url = git@github.com:seebi/dircolors-solarized.git
