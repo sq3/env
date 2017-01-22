@@ -7,3 +7,24 @@
 [submodule "etc/vim/bundle/vim-airline"]
 	path = etc/vim/bundle/vim-airline
 	url = git://github.com/bling/vim-airline.git
+[submodule "etc/vim/bundle/syntastic"]
+	path = etc/vim/bundle/syntastic
+	url = git@github.com:vim-syntastic/syntastic.git
+[submodule "etc/vim/bundle/nerdtree"]
+	path = etc/vim/bundle/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
+[submodule "etc/vim/bundle/vim-fugitive"]
+	path = etc/vim/bundle/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git
+[submodule "etc/vim/bundle/vim-markdown-folding"]
+	path = etc/vim/bundle/vim-markdown-folding
+	url = git@github.com:nelstrom/vim-markdown-folding.git
+[submodule "etc/vim/bundle/vim-autopep8"]
+	path = etc/vim/bundle/vim-autopep8
+	url = git@github.com:tell-k/vim-autopep8.git
+[submodule "etc/vim/bundle/tagbar"]
+	path = etc/vim/bundle/tagbar
+	url = git@github.com:majutsushi/tagbar.git
+[submodule "etc/vim/bundle/auto-pairs"]
+	path = etc/vim/bundle/auto-pairs
+	url = git@github.com:jiangmiao/auto-pairs.git
