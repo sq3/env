@@ -40,7 +40,7 @@ alias ls='ls --color=auto'
 alias lsr='ls_recent'
 alias f='find . -iname'
 alias play='mpv -fs --autosync=4 --cache=yes --cache-secs=60'
-alias vm='cd ~/Documents/repository/privat/vagrantfiles/'
+alias vm='cd ~/repository/privat/vagrantfiles/'
 alias vb='VBoxManage'
 
 alias pb='profitbricks'
