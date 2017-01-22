@@ -1,26 +1,20 @@
-- clean: [‘~‘]
+- clean: etc/[‘~‘]
 - link:
-    ~/.bashrc: .bashrc
-    ~/.config/bitbar: bitbar/
-    ~/.dircolors-solarized: dircolors-solarized
-    ~/.gitignore_global: .gitignore_global
-    ~/.config/htop: htop
-    ~/.khdrc: .khdrc
-    ~/.kwm: .kwm
-    ~/.kwm/kwmrc: .kwm/kwmrc
-    ~/.oh-my-zsh: oh-my-zsh/
-    ~/.oh-my-zsh/themes/sq3.zsh-theme: sq3.zsh-theme
-    ~/.mutt-colors-solarized: mutt-colors-solarized
-    ~/.tigrc: .tigrc
-    ~/.tmux: tmux
-    ~/.tmux.conf: tmux/.tmux.conf
-    ~/Library/Preferences/com.apple.Terminal.plist: system-preferences/com.apple.Terminal.plist
-    ~/.vim: .vim/
-    ~/.vimrc: .vim/.vimrc
-    ~/.vim/bundle/vim-colors-solarized: vim-colors-solarized
-    ~/.zshrc: .zshrc
+    ~/.bashrc: etc/bash/bashrc
+    ~/.config/bitbar: etc/bitbar/
+    ~/.config/bash/dircolors-solarized: etc/bash/dircolors-solarized
+    ~/.config/git/gitignore_global: etc/git/gitignore_global
+    ~/.config/htop: etc/htop
+    ~/.config/zsh: etc/zsh
+    ~/.config/zsh/oh-my-zsh/themes/sq3.zsh-theme: etc/zsh/sq3.zsh-theme
+    ~/.khdrc: etc/khd/khdrc
+    ~/.kwm: etc/kwm
+    ~/.tigrc: etc/tig/tigrc
+    ~/.tmux: etc/tmux
+    ~/.vim: etc/vim/
+    ~/.vimrc: etc/vim/vimrc
+    ~/.zshrc: etc/zsh/zshrc
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [brew services restart khd, Restart khd]
     - [brew services restart kwm, Restart kwm]
-    - ["cp -av ./system-preferences/com.apple.Terminal.plist ~/Library/Preferences/com.apple.Terminal.plist", Update terminal config]
