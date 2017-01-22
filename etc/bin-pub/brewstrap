@@ -1,0 +1,8 @@
+#!/bin/bash
+
+brew list | sort >> ~/.brew_list
+
+while read line; 
+do 
+		brew info $line;
+done < ~/.brew_list

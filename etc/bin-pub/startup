@@ -1,0 +1,39 @@
+#!/bin/bash
+
+new_line= echo -e "\n"
+
+mkdir /tmp/tmp
+
+echo -e "-----------------------update pip tools-----------------------\n"
+pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs pip install -U
+$new_line
+
+echo -e "-----------------------update brew----------------------------\n"
+brew list | sort >> ~/Documents/repository/privat/dotfiles-pub/.brew_list
+brew update
+$new_line
+
+echo -e "-----------------------upgrade brew---------------------------\n"
+brew upgrade
+$new_line
+
+echo -e "-----------------------checking brew--------------------------\n"
+brew doctor
+$new_line
+
+echo -e "-----------------------cleanup brew--------------------------\n"
+brew cleanup
+$new_line
+
+echo -e "-----------------------update GitHub tools--------------------\n"
+ls /usr/local/tools/ > /tmp/user_installed_tools
+
+cd /usr/local/tools/
+
+while read tool;
+do
+		cd $tool
+		echo -e ">>> updating $tool\n"
+		git pull
+		$new_line;
+done < /tmp/user_installed_tools

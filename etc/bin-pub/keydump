@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# this script requires webdump
+# https://github.com/vain/bin-pub/blob/master/webdump
+# thx to vain
+
+cp ~/.ssh/id_rsa_$1.pub /tmp
+
+chmod 444 /tmp/id_rsa_$1.pub
+
+webdump /tmp/id_rsa_$1.pub
+
+rm /tmp/id_rsa_$1.pub

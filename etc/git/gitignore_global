@@ -1,0 +1,10 @@
+# python
+env/
+*.pyc
+
+# macosx 
+.DS_Store
+
+# vim
+*.swp
+

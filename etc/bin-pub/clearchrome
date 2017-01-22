@@ -1,0 +1,3 @@
+#/bin/bash
+
+mv -v /Users/iMarc/Library/Application\ Support/Google/Chrome /tmp/Chrome

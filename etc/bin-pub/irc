@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ssh -t redstripe.kasten.beer "bash -lic 'tmux attach -t IRC'"

@@ -1,0 +1,17 @@
+[user]
+	name = Marc Schnitzius
+	email = mail@mschnitzius.com
+[core]
+	excludesfile = ~/.config/git/gitignore_global
+	editor = /usr/bin/vim
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[push]
+	default = matching
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[credential]
+	helper = osxkeychain

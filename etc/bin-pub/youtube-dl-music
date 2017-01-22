@@ -1,0 +1,51 @@
+#!/bin/bash
+
+downloader=$(which youtube-dl)
+options='-cit --console-title --max-quality FORMAT --extract-audio --audio-format mp3'
+base_dir=$(pwd)
+ydl_tmp='/tmp/ydlm_tmp/'
+queue=()
+count=0
+underline="===================================================================="
+echo "
+WELCOME TO YOUTUBE-DL-MUSIC -- by sq3 - https://github.com/sq3
+--------------------------------------------------------------
+
+based on youtube-dl https://github.com/rg3/youtube-dl
+
+====================================================================
+
+Paste your links here and start downloading queued links by typing \"download\":
+
+"
+
+## Open queue on stdin
+while read line
+do 
+		queue[$count]="$line"
+
+		if [[ ${queue[$count]} = "download" ]]
+		then
+				last=${queue[$count - 1]}
+				
+				## Start downloading queued links 
+				echo -e "\n$underline \n$count links added to queue. Starting download... \n$underline\n"
+				for i in ${queue[@]}
+				do
+						if [[ $i != "download" ]]
+						then
+								mkdir $ydl_tmp
+								cd $ydl_tmp; $downloader $options $i | grep download
+						else
+								cd $ydl_tmp && rename 's/(.*)(-.*)(.mp3)/$1$3/' ./*.mp3 > /dev/null 2>&1
+								mv * $base_dir
+								rm -rf /tmp/ydl_tmp
+								echo -e "\n$underline\nDownloads complete. Bye!"
+								exit
+						fi
+				done
+
+		else
+				count=$(expr $count + 1)
+		fi
+done <&0

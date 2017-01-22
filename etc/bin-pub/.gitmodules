@@ -1,0 +1,3 @@
+[submodule ".ssh-audit"]
+	path = .ssh-audit
+	url = git@github.com:arthepsy/ssh-audit.git

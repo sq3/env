@@ -1,0 +1,7 @@
+#!/bin/bash
+
+rm -rf ~/Library/Application\ Support/Firefox
+
+mv -v /tmp/Firefox ~/Library/Application\ Support/Firefox
+
+chmod 700 ~/Library/Application\ Support/Firefox

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+sudo rm -rf /Users/iMarc/Library/Application\ Support/Google/Chrome
+
+sudo mv -v /tmp/Chrome /Users/iMarc/Library/Application\ Support/Google
+
+chmod 755 /Users/iMarc/Library/Application\ Support/Google/Chrome
+

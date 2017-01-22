@@ -1,0 +1,4 @@
+#!/bin/bash
+
+channel=$1
+echo https://gdata.youtube.com/feeds/base/users/$channel/uploads

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ssh -t heineken.kasten.beer "bash -lic 'tmux attach -t Jabber'"

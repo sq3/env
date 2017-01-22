@@ -1,0 +1,4 @@
+#!/bin/bash
+
+mkdir /Volumes/squeeze
+shfs redstripe.kasten.beer: /Volumes/squeeze/
