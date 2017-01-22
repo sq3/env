@@ -1,0 +1,1 @@
+/Users/iMarc/repositories/privat/env/etc/zsh/sq3.zsh-theme

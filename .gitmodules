@@ -79,3 +79,6 @@
 [submodule "etc/bash/dircolors-solarized"]
 	path = etc/bash/dircolors-solarized
 	url = git@github.com:seebi/dircolors-solarized.git
+[submodule "etc/vim/bundle/vim-airline"]
+	path = etc/vim/bundle/vim-airline
+	url = git://github.com/bling/vim-airline.git
