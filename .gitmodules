@@ -37,3 +37,6 @@
 [submodule "etc/vim/bundle/fonts"]
 	path = etc/vim/bundle/fonts
 	url = git@github.com:powerline/fonts.git
+[submodule "bin"]
+	path = bin
+	url = git@github.com:sq3/bin-pub.git
