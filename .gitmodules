@@ -31,3 +31,9 @@
 [submodule "etc/tmux/plugins/tpm"]
 	path = etc/tmux/plugins/tpm
 	url = git@github.com:tmux-plugins/tpm.git
+[submodule "etc/vim/bundle/vim-airline-themes"]
+	path = etc/vim/bundle/vim-airline-themes
+	url = git@github.com:vim-airline/vim-airline-themes.git
+[submodule "etc/vim/bundle/fonts"]
+	path = etc/vim/bundle/fonts
+	url = git@github.com:powerline/fonts.git
