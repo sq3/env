@@ -40,3 +40,9 @@
 [submodule "bin"]
 	path = bin
 	url = git@github.com:sq3/bin-pub.git
+[submodule "etc/vim/bundle/YouCompleteMe"]
+	path = etc/vim/bundle/YouCompleteMe
+	url = git@github.com:Valloric/YouCompleteMe.git
+[submodule "etc/vim/bundle/jedi-vim"]
+	path = etc/vim/bundle/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
