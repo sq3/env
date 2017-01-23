@@ -11,7 +11,7 @@
     ~/.khdrc: etc/khd/khdrc
     ~/.kwm: etc/kwm
     ~/.tigrc: etc/tig/tigrc
-    ~/.tmux: etc/tmux
+    ~/.tmux.conf: etc/tmux/tmux.conf
     ~/.vim: etc/vim/
     ~/.vimrc: etc/vim/vimrc
     ~/.zshrc: etc/zsh/zshrc
