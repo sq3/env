@@ -96,5 +96,5 @@ export DOCKER_CERT_PATH=/Users/iMarc/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
 
 # dircolors
-eval $(dircolors ~/.config/dircolors-solarized/dircolors.256dark)
+eval $(dircolors ~/.config/bash/dircolors-solarized/dircolors.256dark)
 
