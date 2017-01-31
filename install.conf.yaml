@@ -10,6 +10,7 @@
     ~/.htoprc: etc/htop/htoprc
     ~/.khdrc: etc/khd/khdrc
     ~/.kwm: etc/kwm
+    ~/.mutt: etc/mutt
     ~/.tigrc: etc/tig/tigrc
     ~/.tmux.conf: etc/tmux/tmux.conf
     ~/.vim: etc/vim/
