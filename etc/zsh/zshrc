@@ -11,8 +11,6 @@ plugins=(git osx vagrant)
 source $ZSH/oh-my-zsh.sh
 
 # alias
-source ~/.zsh/secret_alias
-
 alias t='/tmp/tmp'
 alias repos='~/repositories'
 alias speedtest='/usr/local/bin/speedtest_cli'
@@ -43,34 +41,24 @@ alias play='mpv -fs --autosync=4 --cache=yes --cache-secs=60'
 alias vm='cd ~/repositories/privat/vagrantfiles'
 alias vb='VBoxManage'
 
-alias pb='profitbricks'
-
 # environment
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-
 export EDITOR='vim'
-export SHELL='zsh'
 
+export PATH=/bin:$PATH
+export PATH=/sbin:$PATH
+export PATH=/usr/bin:$PATH
+export PATH=/usr/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
-export PATH=~/repositories/privat/env/bin:$PATH
-export PATH=~/repositories/privat/env/etc/mutt/bin:$PATH
+export PATH=~/repositories/private/env/bin:$PATH
+export PATH=~/repositories/private/env/etc/mutt/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-
-# bundlewrap (old and new version)
-export BW_ADD_HOST_KEYS=1
-export BW_ITEM_WORKERS=8
-export BW_NODE_WORKERS=8
-
-export BWADDHOSTKEYS=1
-export BWITEMWORKERS=9
-export BWNODEWORKERS=8
+export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
 
 # man page
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export MANWIDTH=75
-
 
 man() {
     env \
@@ -86,10 +74,6 @@ man() {
         PATH=${HOME}/bin:${PATH} \
     man "$@"
 }
-#export LESS_TERMCAP_md=$'\e[2;33m'        # Bold
-#export LESS_TERMCAP_me=$'\e[0m'           # End Bold
-#export LESS_TERMCAP_us=$'\e[3;36m'        # Underline
-#export LESS_TERMCAP_ue=$'\e[0m'           # End Underline
 
 # docker
 export DOCKER_HOST=tcp://192.168.59.103:2376
