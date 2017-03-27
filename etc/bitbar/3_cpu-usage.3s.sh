@@ -39,3 +39,6 @@ LC_ALL=en_US.UTF-8
 # that input contains at least one 100(%). Strip it afterwards.
 CHART=$( ( echo 100 ; cat "${HISTORY_FILE}" ) | ${SPARK})
 echo "${CHART:1}"
+echo "---"
+echo "Uptime: $(uptime | grep -ohe 'up .*' | sed 's/,//g' | awk '{ print $2" "$3 }')"
+echo "Load: $(uptime | grep -ohe 'load average[s:][: ].*' | awk '{ print $3 }')"
