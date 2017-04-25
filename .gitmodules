@@ -52,3 +52,6 @@
 [submodule "etc/mutt"]
 	path = etc/mutt
 	url = git@github.com:sq3/dot-mutt.git
+[submodule "etc/vim/bundle/vim-puppet"]
+	path = etc/vim/bundle/vim-puppet
+	url = git@github.com:rodjek/vim-puppet.git
