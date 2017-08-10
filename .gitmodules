@@ -55,3 +55,6 @@
 [submodule "etc/vim/bundle/vim-puppet"]
 	path = etc/vim/bundle/vim-puppet
 	url = git@github.com:rodjek/vim-puppet.git
+[submodule "etc/vim/bundle/salt-vim"]
+	path = etc/vim/bundle/salt-vim
+	url = https://github.com/saltstack/salt-vim.git
