@@ -1,17 +1,15 @@
 - clean: etc/[‘~‘]
 - link:
     ~/.bashrc: etc/bash/bashrc
-    ~/.config/bitbar: etc/bitbar/
     ~/.config/bash: etc/bash
     ~/.config/git: etc/git
     ~/.config/zsh: etc/zsh
     ~/.config/zsh/oh-my-zsh/themes/sq3.zsh-theme: etc/zsh/sq3.zsh-theme
     ~/.gitconfig: etc/git/gitconfig
     ~/.htoprc: etc/htop/htoprc
-    ~/.khdrc: etc/khd/khdrc
-    ~/.kwm: etc/kwm
     ~/.mutt: etc/mutt
     ~/.newsbeuter/config: etc/newsbeuter/config
+    /etc/systemd/system/slock@.service: etc/systemd/slock@.service
     ~/.tigrc: etc/tig/tigrc
     ~/.tmux.conf: etc/tmux/tmux.conf
     ~/.vim: etc/vim/
@@ -19,5 +17,5 @@
     ~/.zshrc: etc/zsh/zshrc
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [brew services restart khd, Restart khd]
-    - [brew services restart kwm, Restart kwm]
+    - [systemctl daemon-reload, Reloading systemd]
+    - [systemctl enable slock@$USER, enable slock on suspend for $USER]
