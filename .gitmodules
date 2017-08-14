@@ -58,3 +58,6 @@
 [submodule "etc/vim/bundle/salt-vim"]
 	path = etc/vim/bundle/salt-vim
 	url = https://github.com/saltstack/salt-vim.git
+[submodule "etc/vim/bundle/vim-jinja"]
+	path = etc/vim/bundle/vim-jinja
+	url = https://github.com/lepture/vim-jinja.git
