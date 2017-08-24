@@ -6,15 +6,16 @@
     ~/.config/zsh: etc/zsh
     ~/.config/zsh/oh-my-zsh/themes/sq3.zsh-theme: etc/zsh/sq3.zsh-theme
     ~/.gitconfig: etc/git/gitconfig
-    ~/.htoprc: etc/htop/htoprc
+    ~/.config/htop/htoprc: etc/htop/htoprc
     ~/.mutt: etc/mutt
     ~/.newsbeuter/config: etc/newsbeuter/config
-    /etc/systemd/system/slock@.service: etc/systemd/slock@.service
     ~/.tigrc: etc/tig/tigrc
     ~/.tmux.conf: etc/tmux/tmux.conf
+    ~/.Xdefaults: etc/urxvt/Xdefaults
     ~/.vim: etc/vim/
     ~/.vimrc: etc/vim/vimrc
     ~/.zshrc: etc/zsh/zshrc
+    /etc/systemd/system/slock@.service: etc/systemd/slock@.service
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [systemctl daemon-reload, Reloading systemd]
