@@ -1,1 +1,1 @@
-/Users/mschnitzius/repositories/private/env/etc/zsh/sq3.zsh-theme
+/home/mschnitzius/repositories/private/env/etc/zsh/sq3.zsh-theme
