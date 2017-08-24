@@ -1,3 +1,4 @@
+source ~/.config/zsh/work.conf
 # Shell Aliases and Functions.
 alias l='ls -lahtr --color=auto'
 alias ls='ls --color=auto'
