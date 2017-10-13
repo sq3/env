@@ -9,6 +9,7 @@
     ~/.config/htop/htoprc: etc/htop/htoprc
     ~/.mutt: etc/mutt
     ~/.newsbeuter/config: etc/newsbeuter/config
+    ~/.config/termite: etc/termite
     ~/.tigrc: etc/tig/tigrc
     ~/.tmux.conf: etc/tmux/tmux.conf
     ~/.Xdefaults: etc/urxvt/Xdefaults
