@@ -10,6 +10,7 @@
     ~/.mutt: etc/mutt
     ~/.newsbeuter/config: etc/newsbeuter/config
     ~/.config/termite: etc/termite
+    ~/.sshrc.d: etc/sshrc/
     ~/.sshrc: etc/sshrc/sshrc
     ~/.tigrc: etc/tig/tigrc
     ~/.tmux.conf: etc/tmux/tmux.conf
