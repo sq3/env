@@ -17,6 +17,7 @@ alias l='ls -lahtr --quoting-style=shell --color=auto --time-style="+ %F   %H:%M
 alias ls='ls --color=auto --quoting-style=shell'
 alias f='find . -iname'
 alias ..='cd ..'
+alias hs='history | grep'
 
 # environment
 export LC_ALL=en_US.UTF-8
