@@ -6,7 +6,7 @@ ZSH_THEME="sq3"
 
 # history
 HIST_STAMPS="yyyy-mm-dd"
-plugins=(git osx vagrant)
+plugins=(git git-flow vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
