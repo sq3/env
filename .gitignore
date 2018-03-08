@@ -3,3 +3,4 @@
 *.swp
 etc/zsh/work.conf
 .idea
+etc/weechat/irc.conf
