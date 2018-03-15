@@ -11,6 +11,7 @@ alias gf='git fetch'
 alias glog='git log --graph --color=always --all --pretty=format:"%C(auto)%h%d %s (%Cred%an, %ai)"'
 alias glogsub='git log --graph --color=always --all --pretty=format:"%C(auto)%h%d %s (%Cred%an, %ai)" --submodule=log -p'
 alias gs='git status'
+alias gsd='git status -s | while read mode file; do echo $mode $(stat -c %y $file) $file; done|sort -k1.4'
 alias gdiff='git diff'
 
 alias l='ls -lahtr --quoting-style=shell --color=auto --time-style="+ %F   %H:%M │ "'
