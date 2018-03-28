@@ -64,3 +64,6 @@
 [submodule "etc/vim/bundle/vim-gitgutter"]
 	path = etc/vim/bundle/vim-gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
+[submodule "etc/zsh/zsh-autosuggestions"]
+	path = etc/zsh/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
