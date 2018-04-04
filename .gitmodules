@@ -67,3 +67,6 @@
 [submodule "etc/zsh/zsh-autosuggestions"]
 	path = etc/zsh/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "etc/zsh/infoline-zsh-theme"]
+	path = etc/zsh/infoline-zsh-theme
+	url = git@github.com:sq3/infoline-zsh-theme.git
