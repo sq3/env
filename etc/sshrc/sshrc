@@ -21,6 +21,8 @@ alias ..='cd ..'
 alias hs='history | grep'
 alias less='less -isM'
 
+alias pass='date +%s | sha256sum | base64 | head -c 32 ; echo'
+
 # environment
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
