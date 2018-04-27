@@ -1,5 +1,5 @@
 # promt
-export PS1=' \[\033[0;31m\]\j \[\033[1;33m\]\t \[\033[1;37m\]\[ \u@$(hostname)\033[1;34m\]\w\[\033[1;32m\] $(parse_git_branch) \n\[\033[1;37m\]\$ '
+export PS1=' \[\033[0;31m\]\j \[\033[1;33m\]\t \[\033[1;37m\]\[ \u@$(hostname):\033[1;34m\]\w\[\033[1;32m\] $(parse_git_branch) \n\[\033[1;37m\]\$ '
 
 # alias
 alias g='git'
