@@ -46,6 +46,15 @@ function salt-state-apply() {
 	-v
 }
 
+function salt-pillar-items() {
+	MINION_ID="$1"
+
+	$SALT "$MINION_ID" state.apply \
+	"$STATE" \
+	pillar.items \
+	--output=yaml
+}
+
 function salt-icinga-ticket() {
 	AIT_MON='$1'
 	MINION_ID="$2"
