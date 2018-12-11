@@ -49,8 +49,7 @@ function salt-state-apply() {
 function salt-pillar-items() {
 	MINION_ID="$1"
 
-	$SALT "$MINION_ID" state.apply \
-	"$STATE" \
+	$SALT "$MINION_ID" \
 	pillar.items \
 	--output=yaml
 }
