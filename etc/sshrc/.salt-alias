@@ -1,0 +1,77 @@
+SALT='sudo salt'
+
+function salt-test-highstate() {
+	MINION_ID="$1"
+	STATE="$2"
+
+	$SALT "$MINION_ID" state.highstate \
+	--state-verbose=False \
+	--state-output=change \
+	test=True \
+	-v
+}
+
+function salt-highstate() {
+	MINION_ID="$1"
+	STATE="$2"
+
+	$SALT "$MINION_ID" state.highstate \
+	--state-verbose=False \
+	--state-output=change \
+	-v
+}
+
+function salt-test-state-apply() {
+	MINION_ID="$1"
+	STATE="$2"
+
+	$SALT "$MINION_ID" state.apply \
+	"$STATE" \
+	saltenv=production \
+	--state-verbose=False \
+	--state-output=change \
+	--test=True \
+	-v
+}
+
+function salt-state-apply() {
+	MINION_ID="$1"
+	STATE="$2"
+
+	$SALT "$MINION_ID" state.apply \
+	"$STATE" \
+	saltenv=production \
+	--state-verbose=False \
+	--state-output=change \
+	-v
+}
+
+function salt-icinga-ticket() {
+	MINION_ID="$1"
+	AIT_MON='de-f2-p-mon0.aiticon.net'
+
+	$SALT "$AIT_MON" \
+	icinga2.generate_ticket "$MINION_ID"
+}
+
+function salt-show-jobs() {
+	$SALT-run jobs.active
+}
+
+function salt-show-job-history() {
+	$SALT-run jobs.list_jobs
+}
+
+function salt-show-job-id() {
+	JOB_ID="$1"
+
+	$SALT-run jobs.lookup_jid "$JOB_ID"
+}
+
+function salt-kill-job-id() {
+	MINION_ID="$1"
+	JOB_ID="$2"
+
+	$SALT "$MINION_ID" saltutil.kill_job "$JOB_ID"
+}
+

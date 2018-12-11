@@ -23,6 +23,8 @@ alias less='less -isM'
 
 alias pass='date +%s | sha256sum | base64 | head -c 32 ; echo'
 
+source "$SSHHOME/.sshrc.d/.salt-alias"
+
 # environment
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
