@@ -47,8 +47,8 @@ function salt-state-apply() {
 }
 
 function salt-icinga-ticket() {
-	MINION_ID="$1"
-	AIT_MON='de-f2-p-mon0.aiticon.net'
+	AIT_MON='$1'
+	MINION_ID="$2"
 
 	$SALT "$AIT_MON" \
 	icinga2.generate_ticket "$MINION_ID"
